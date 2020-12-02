@@ -1,0 +1,33 @@
+---
+title: Login首頁
+layout: ./app/login.ejs
+engine: ejs
+current: index
+---
+<main class="container login-Container">
+  <div class="row">
+    <div class="col-lg-8 ">
+      <img src="assets/images/week6/login1.jpg" alt="" class="img-fluid login-Img">
+    </div>
+    <div class="col-lg-4 d-flex flex-column justify-content-center">
+      <h2>Log in</h2>
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">帳號</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">密碼</label>
+          <input type="text" class="form-control mb-l" id="formGroupExampleInput2" placeholder="Password">
+          <div class="form-body d-flex">
+            <p class="mr-auto m-0 align-self-center text-brown">
+              <a href="#" class="text-bold">忘記密碼</a>
+            </p>
+            <a href="#" class="btn btn-outline-dark-brown mr-2">註冊</a>
+            <a href="member.html" class="btn btn-dark-brown">登入</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

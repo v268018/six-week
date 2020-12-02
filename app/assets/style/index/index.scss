@@ -1,0 +1,64 @@
+.jumbotron{
+    background-image: url(../images/week6/index1.jpg);
+    height:800px;
+    background-size: cover;
+    background-position:center;
+    &-Title{font-size:$font-size-l+8;};//32+8
+    &-Subtext{font-size:$font-size-m+4;}//20+4
+    &-btn{border: 2px solid #fff;}     
+}
+.chanel-Img-m{
+    width: 100%;
+    height: 555px;
+    object-fit: cover;
+    @include mobile{
+        height: 350px;
+    }
+    
+}
+.chanel-Img-l{
+    width: 100%;
+    height: 1080px;
+    object-fit: cover;
+}
+.product-Item-img{
+    object-fit: cover;
+    height: 540px;
+    cursor: pointer;
+    @include mobile{
+    height: 350px;
+    }
+}
+.font-color{
+    position: relative;
+    &::after{
+        position: absolute;
+        content:"Sold out";
+        color:#fff;
+        background:rgba(0,0,0,.3);
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        font-size:$font-size-m+4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+.subscriptions-banner{
+    background-image: url(../images/week6/index10.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+}
+.border-bold{
+    border: 2px solid #916000;
+}
+.hover-Scale{
+    display: block;
+    :hover{
+        transform: scale(0.9);
+        transition: all 1.5s;
+    }
+}

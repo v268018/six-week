@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="assets/style/hovercss/hover.css">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="container navbar navbar-expand-md navbar-light px-0">
+    <!-- logo -->
+    <a href="index.html">
+      <h1 class="navbar-Logo">
+          D'Perfume
+      </h1>
+    </a>
+    <div class="d-flex ">
+      <div class="cart-message d-md-none">
+        <a href="#" class="material-icons nav-link text-secondary">
+          shopping_cart
+        </a>
+      </div>
+      <!-- 漢堡選單 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  
+    <!-- 導覽列 -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" d-flex>
+      <ul class="navbar-nav  ml-auto">
+        <!-- Product -->
+        <li class="nav-item d-flex align-items-center hvr-wobble-horizontal">
+          <a href="product.html" class="material-icons nav-link d-none d-md-block text-secondary ">
+            add_business
+          </a>
+          <a class="nav-link h5 mb-0 p-md-0 " href="product.html">Product</a>
+        </li>
+        <!-- log in -->
+        <li class="nav-item  d-none d-md-flex align-items-center hvr-wobble-horizontal">
+          <a href="login.html"class="material-icons  nav-link d-none d-md-block text-secondary">
+            person
+          </a>
+          <a class="nav-link h5 mb-0 p-md-0" href="login.html">log in</a>
+        </li>
+        <!-- Wishlist -->
+        <li class="nav-item d-flex align-items-center hvr-wobble-horizontal">
+          <a href="#" class="material-icons  nav-link d-none d-md-block text-secondary">
+            favorite
+          </a>
+          <a class="nav-link h5 mb-0 p-md-0" href="#">Wishlist</a>
+        </li>
+        <!-- Cart -->
+        <li class="nav-item d-none d-md-flex align-items-center hvr-wobble-horizontal">
+          <a href="#" class="material-icons nav-link d-none d-md-block text-secondary">
+            shopping_cart
+          </a>
+          <a class="nav-link h5 mb-0 p-0" href="#">Cart(3)</a>
+        </li>
+        <!-- blog -->
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link h5  mb-0 pl-0" href="#">Blog</a>
+        </li>
+        <!-- Contact -->
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link h5 mb-0 pl-0 " href="#">Contact</a>
+        </li>
+        <!-- Mypage -->
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link h5 mb-0 pl-0 " href="#">Mypage</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+  <!-- subscriptions-banner -->
+  <section class="subscriptions-banner">
+  <div class="container h-100 d-flex justify-content-center align-items-center">
+      <div class="row no-gutters w-100">
+          <div class="col-md-4"  data-aos="fade-up">
+              <h2 class="h2 text-secondary">
+                  記得 
+                  <br>
+                  訂閱以獲取更多資訊！
+              </h2>
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control border-bold" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-dark-brown text-s" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+  
+  <!-- footer -->
+  <section class="footer bg-dark-brown"> 
+      <div class="container py-2">
+        <div class="d-flex justify-content-between">
+            <!-- footer-logo -->
+            <div class="d-flex align-items-center">
+              <a href="index.html">
+                <h1 class="footer-Logo m-0 mr-m">
+                    D'Perfume
+                </h1>
+              </a>
+              <small class="text-white">© 2020. All Rights Reserved.</small>
+            </div>
+            <!-- navbar -->
+            <ul class="list-unstyled d-none d-md-flex m-0 align-items-center">
+              <li class="mr-l">
+                <a href="#"class="text-white">Product</a>
+              </li>
+              <li class="mr-l">
+                <a href="#"class="text-white">Blog</a>
+              </li>
+              <li class="mr-l">
+                <a href="#"class="text-white">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+  </section>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

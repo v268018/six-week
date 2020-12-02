@@ -1,0 +1,51 @@
+.navbar-Logo{
+    background-image: url(../images/week6/d’Perfume.png);
+    width: 128px;
+    height: 38px;
+    @include text-hide;
+}
+.cart-message{
+    position: relative;
+    &::after{
+        content: "3";
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        color:#fff;
+        background:#916000;
+        border-radius: 60%;
+        top:5px;
+        right:10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    &.nav-link{
+        padding:0;
+    }
+}
+.navbar-nav{
+    .nav-item{
+        @include pad{
+            text-align: center;
+            border: 1px solid #fff;
+            background: #707070;
+        } 
+        .nav-link{
+            text-decoration: none;
+            @include pad{
+                text-align: center;
+                color:#fff;
+                margin: 0 auto;
+            }
+           
+        }
+        
+    }
+}
+.offset-lg{
+    margin-left: 56%;
+    @include pad{
+       margin: 0;
+    }
+}
+

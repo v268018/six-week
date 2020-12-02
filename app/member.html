@@ -1,0 +1,202 @@
+---
+title: 會員頁面
+layout: ./app/member.ejs
+engine: ejs
+current: index
+---
+<main class="container">
+    <div class="row">
+        <!-- side-navber -->
+        <div class="col-lg-2 order-1 order-lg-1">
+            <h2 class="text-info text-m text-bold d-none d-lg-block mb-5">會員中心</h2>
+            <ul class="list-unstyled d-flex justify-content-between flex-lg-column"> 
+                <li class="mb-2">
+                    <a href="#" class="text-info text-bold">會員資料修改</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="text-info text-bold">訂單查詢</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="text-info text-bold">退／換貨申請</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-7 order-3 order-lg-2">
+            <p class="text-bold border-button pb-2">個人資料修改</p>
+            <form>
+                <div class="form-group row  no-gutters">
+                    <label for="account" 
+                    class="col-2 col-form-label text-info text-bold">會員帳號</label>
+                    <div class="col-8">
+                      <input type="text" class="form-control border-0" 
+                      id="account" name="account" value="email@example.com">
+                    </div>
+                </div>
+                <div class="form-group row  no-gutters">
+                    <label for="name" class="col-2 col-form-label text-info text-bold">會員姓名</label>
+                    <div class="col-8">
+                      <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                </div>
+                <div class="form-group row  no-gutters">
+                    <label for="gender" class="col-2 col-form-label text-info text-bold">會員性別</label>
+                    <div class="col-3">
+                        <select class="custom-select" id="gender">
+                            <option selected="" value="female">女</option>
+                            <option value="male">男</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row  no-gutters">
+                  <label for="email" class="col-2 col-form-label text-info text-bold">電子信箱</label>
+                  <div class="col-8">
+                    <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                  </div>
+                </div>
+                <div class="form-group row  no-gutters">
+                  <label for="phone" class="col-2 col-form-label text-info text-bold">手機號碼</label>
+                  <div class="col-8">
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                  </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="address" class="col-2 col-form-label text-info text-bold">聯絡地址</label>
+                    <div class="col-8">
+                        <div class="row no-gutters mb-2">
+                            <div class="col-5">
+                                <select class="custom-select" id="address">
+                                    <option selected="" value="taiwan">台灣及離島</option>
+                                </select>
+                            </div>  
+                        </div>
+                        <div class="row  no-gutters mb-2">
+                            <div class="col-5  mr-2">
+                                <select class="custom-select" id="other-address">
+                                    <option selected="" value="
+                                    Kaohsiung">高雄市</option>
+                                    <option selected="" value="
+                                    other">其他</option>
+                                </select>
+                            </div>  
+                            <div class="col-5">
+                                <select class="custom-select" id="other-second-address">
+                                    <option selected="" value="
+                                    Kaohsiung">高雄市</option>
+                                    <option selected="" value="
+                                    other">其他</option>
+                                </select>
+                            </div>  
+                        </div>
+                        <div class="row no-gutters">
+                            <input type="text" name="user-address" id="user-address" placeholder="請輸入地址" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="delivery-address" class="col-2 col-form-label text-info text-bold">配送地址</label>
+                    <div class="col-8">
+                        <div class="row no-gutters mb-2">
+                            <div class="col-5">
+                                <select class="custom-select" id="delivery-address">
+                                    <option selected="" value="taiwan">台灣及離島</option>
+                                </select>
+                            </div>  
+                        </div>
+                        <div class="row  no-gutters mb-2">
+                            <div class="col-5  mr-2">
+                                <select class="custom-select" id="ohter-delivery-address">
+                                    <option selected="" value="
+                                    Kaohsiung">高雄市</option>
+                                    <option selected="" value="
+                                    other">其他</option>
+                                </select>
+                            </div>  
+                            <div class="col-5">
+                                <select class="custom-select" id="ohter-second-delivery-address">
+                                    <option selected="" value="
+                                    Kaohsiung">高雄市</option>
+                                    <option selected="" value="
+                                    other">其他</option>
+                                </select>
+                            </div>  
+                        </div>
+                        <div class="row no-gutters mb-2">
+                            <input type="text" name="user-delivery-address" id="user-delivery-address" placeholder="請輸入地址" class="form-control">
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5">
+                                <a href="#" class="btn btn-block btn-dark-brown">確定修改</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p class="text-bold border-button pb-2">修改密碼</p>
+            <form>
+                <div class="form-group row  no-gutters">
+                    <label for="old-password" 
+                    class="col-sm-2 col-form-label text-info text-bold">舊密碼</label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" 
+                      id="old-password" name="old-password">
+                    </div>
+                </div>
+                <div class="form-group row  no-gutters">
+                    <label for="new-password" 
+                    class="col-sm-2 col-form-label text-info text-bold">新密碼</label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" 
+                      id="new-password" name="new-password">
+                    </div>
+                </div>
+                <div class="form-group row  no-gutters">
+                    <label for="check-password" 
+                    class="col-sm-2 col-form-label text-info text-bold">確認密碼</label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" 
+                      id="check-password" name="check-password">
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <a href="#" class="btn btn-block btn-dark-brown">變更密碼</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>   
+        </div>
+        <div class="col-lg-3 order-2 order-lg-3">
+            <h3 class="text-m text-info mb-5">
+                <span class="material-icons align-middle">person</span>
+                <span class="text-s">會員編碼</span>
+                T00020080615
+            </h3>
+            <div class="row  no-gutters ">
+                <div class="col-5 text-info">購物車</div>
+                <div class="col-4 text-info">56</div>
+            </div>
+            <div class="row no-gutters ">
+                <div class="col-5 text-info">我的收藏</div>
+                <div class="col-4 text-info">23</div>
+            </div>
+            <div class="row no-gutters ">
+                <div class="col-5 text-info">完成訂單</div>
+                <div class="col-4 text-info">8</div>
+            </div>
+            <div class="row no-gutters ">
+                <div class="col-5 text-info">會員紅利</div>
+                <div class="col-4 text-info">2680</div>
+            </div>
+            <div class="row no-gutters ">
+                <div class="col-5 text-info">邀請碼</div>
+                <div class="col-4 text-info">TK2075</div>
+            </div>
+            <p class="text-s text-info">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+        </div>
+    </div>
+   
+</main>
