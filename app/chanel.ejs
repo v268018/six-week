@@ -10,18 +10,14 @@
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="assets/style/hovercss/hover.css">
+  <link rel="stylesheet" href="assets/style/vendors/hovercss/hover.css">
 </head>
 
 <body>
   <!-- navbar -->
   <nav class="container navbar navbar-expand-md navbar-light px-0">
     <!-- logo -->
-    <a href="index.html">
-      <h1 class="navbar-Logo">
-          D'Perfume
-      </h1>
-    </a>
+    <h1><a href="index.html" class="Logo">D'Perfume </a></h1>
     <div class="d-flex ">
       <div class="cart-message d-md-none">
         <a href="#" class="material-icons nav-link text-secondary">
@@ -33,7 +29,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-   
+  
     <!-- 導覽列 -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown" d-flex>
       <ul class="navbar-nav  ml-auto">
@@ -82,6 +78,7 @@
       </ul>
     </div>
   </nav>
+
   <!--product-Navber-->
   <section class="bg-dark-brown d-none d-md-block">
     <nav class="container">
@@ -95,9 +92,8 @@
         </ul>
     </nav>
   </section> 
-  <%- contents %>
 
- 
+  <%- contents %>
 
   <!-- footer -->
   <section class="footer bg-dark-brown"> 

@@ -4,12 +4,21 @@
 .text-m{font-size: $font-size-m;} //20px
 .text-s{font-size: $font-size-s;} //16px
 .text-bold{font-weight: bold;}
-.border-button{
-   border-bottom: 1px solid #000;
-}
+.border-button{border-bottom: 1px solid #000;}
+   
+
 @mixin text-hide{
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
+    display: block;
 }
+//bg-Conver
+.bg-Cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+   
+
 

@@ -1,0 +1,14 @@
+.login-Container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include pad{
+        padding-top: 30px;
+    }
+    .login-Img{
+        height: 700px;
+        object-fit: cover;
+        @media (max-width:968px){height: 440px;}
+        @include pad{height: 220px;}      
+    }
+
+}

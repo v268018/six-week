@@ -1,10 +1,10 @@
-@import 'variable';
-@import 'utilities';
-@import 'grid';
 @import 'bs4/bootstrap';
+@import 'utils/variable';
+@import 'utils/utilities';
+@import 'utils/grid';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'index/index';
-@import 'product/product';
-@import 'login/login';
-@import 'Chanel/Chanel';
+@import 'pages/index';
+@import 'pages/product';
+@import 'pages/login';
+@import 'pages/Chanel';
