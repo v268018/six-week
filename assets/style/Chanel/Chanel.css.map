@@ -1,1 +1,0 @@
-{"version":3,"sources":["Chanel/Chanel.scss"],"names":[],"mappings":"AAAA;EACI;IACE,kBAAkB;IAClB,QAAO,EAAA,EACR","file":"Chanel.css","sourcesContent":["@media (min-width: 768px) {\r\n    .description {\r\n      position: absolute;\r\n      right:0;\r\n    }\r\n}"]}

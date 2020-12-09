@@ -10,18 +10,14 @@
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="assets/style/hovercss/hover.css">
+  <link rel="stylesheet" href="assets/style/vendors/hovercss/hover.css">
 </head>
 
 <body>
   <!-- navbar -->
   <nav class="container navbar navbar-expand-md navbar-light px-0">
     <!-- logo -->
-    <a href="index.html">
-      <h1 class="navbar-Logo">
-          D'Perfume
-      </h1>
-    </a>
+    <h1><a href="index.html" class="Logo">D'Perfume </a></h1>
     <div class="d-flex ">
       <div class="cart-message d-md-none">
         <a href="#" class="material-icons nav-link text-secondary">
@@ -82,6 +78,7 @@
       </ul>
     </div>
   </nav>
+
   <!--product-Navber-->
   <section class="bg-dark-brown d-none d-md-block">
     <nav class="container">
@@ -95,6 +92,7 @@
         </ul>
     </nav>
   </section> 
+  
   <main class="container login-Container">
   <div class="row">
     <div class="col-lg-8 ">
@@ -105,53 +103,53 @@
       <form>
         <div class="form-group">
           <label for="formGroupExampleInput">帳號</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="email@example.com">
+          <input type="email" class="form-control" id="formGroupExampleInput" placeholder="email@example.com">
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">密碼</label>
-          <input type="text" class="form-control mb-l" id="formGroupExampleInput2" placeholder="Password">
-          <div class="form-body d-flex">
-            <p class="mr-auto m-0 align-self-center text-brown">
-              <a href="#" class="text-bold">忘記密碼</a>
-            </p>
-            <a href="#" class="btn btn-outline-dark-brown mr-2">註冊</a>
-            <a href="member.html" class="btn btn-dark-brown">登入</a>
-          </div>
+          <input type="Password" class="form-control mb-l" id="formGroupExampleInput2" placeholder="Password">
         </div>
       </form>
+      <!-- btn -->
+      <ul class="list-unstyled d-flex">
+        <li class="mr-auto">
+            <a href="#" class="text-brown text-bold">忘記密碼</a>
+        </li>
+        <li><a href="#" class="btn btn-outline-dark-brown mr-2">註冊</a></li>
+        <li><a href="member.html" class="btn btn-dark-brown">登入</a></li>
+      </ul>
     </div>
   </div>
 </main>
 
  
 
-  <!-- footer -->
-  <section class="footer bg-dark-brown"> 
-      <div class="container py-2">
-        <div class="d-flex justify-content-between">
-            <!-- footer-logo -->
-            <div class="d-flex align-items-center">
-              <a href="index.html">
-                <h1 class="footer-Logo m-0 mr-m">
-                    D'Perfume
-                </h1>
-              </a>
-              <small class="text-white">© 2020. All Rights Reserved.</small>
-            </div>
-            <!-- navbar -->
-            <ul class="list-unstyled d-none d-md-flex m-0 align-items-center">
-              <li class="mr-l">
-                <a href="#"class="text-white">Product</a>
-              </li>
-              <li class="mr-l">
-                <a href="#"class="text-white">Blog</a>
-              </li>
-              <li class="mr-l">
-                <a href="#"class="text-white">Contact</a>
-              </li>
-            </ul>
-        </div>
+
+   <!-- footer -->
+   <section class="footer bg-dark-brown"> 
+    <div class="container py-2">
+      <div class="d-flex justify-content-between">
+          <!-- footer-logo -->
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="mr-m">
+              <img class="img-fluid" src="assets/images/week6/d’Perfumewhite.png" alt="D'Pereume LOGO">
+            </a>
+            <small class="text-white">© 2020. All Rights Reserved.</small>
+          </div>
+          <!-- navbar -->
+          <ul class="list-unstyled d-none d-md-flex m-0 align-items-center">
+            <li class="mr-l">
+              <a href="product.html" class="text-white">Product</a>
+            </li>
+            <li class="mr-l">
+              <a href="#"class="text-white">Blog</a>
+            </li>
+            <li class="mr-l">
+              <a href="#"class="text-white">Contact</a>
+            </li>
+          </ul>
       </div>
+    </div>
   </section>
   
   <script src="./assets/js/vendors.js"></script>

@@ -10,7 +10,7 @@
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="assets/style/hovercss/hover.css">
+  <link rel="stylesheet" href="assets/style/vendors/hovercss/hover.css">
 
 </head>
 
@@ -18,11 +18,7 @@
   <!-- navbar -->
   <nav class="container navbar navbar-expand-md navbar-light px-0">
     <!-- logo -->
-    <a href="index.html">
-      <h1 class="navbar-Logo">
-          D'Perfume
-      </h1>
-    </a>
+    <h1><a href="index.html" class="Logo">D'Perfume </a></h1>
     <div class="d-flex ">
       <div class="cart-message d-md-none">
         <a href="#" class="material-icons nav-link text-secondary">
@@ -34,7 +30,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-  
+   
     <!-- 導覽列 -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown" d-flex>
       <ul class="navbar-nav  ml-auto">
@@ -84,9 +80,10 @@
     </div>
   </nav>
 
-  <!--product-Navber-->
-<section class="bg-dark-brown d-none d-md-block">
-    <nav class="container">
+  
+<!--product-Navber-->
+<nav class="bg-dark-brown d-none d-md-block">
+    <div class="container">
         <ul class="list-unstyled product-Navber d-flex text-m">
             <li class="navber-Group"><a href="#" class="navber-link">CHANEL</a></li>
             <li class="navber-Group"><a href="#" class="navber-link">Jo Malone</a></li>
@@ -95,15 +92,18 @@
             <li class="navber-Group"><a href="#" class="navber-link">Chloe</a></li>
             <li class="navber-Group"><a href="#" class="navber-link">ZARA</a></li>
         </ul>
-    </nav>
-</section>
+    </div>
+</nav>
 
 <section class="container">
     <!-- row-1 -->
     <ul class="row list-unstyled">
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products1.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                    <img class="img-fluid product-Img-m"src="assets/images/week6/products1.jpg" alt="">
+                </a>
+               
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -122,9 +122,12 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/index6.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                    <img class="img-fluid product-Img-m"src="assets/images/week6/index6.jpg" alt="">
+                </a>
+              
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -143,9 +146,12 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products3.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                    <img class="img-fluid product-Img-m"src="assets/images/week6/products3.jpg" alt="">
+                </a>
+              
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -164,9 +170,11 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products4.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                  <img class="img-fluid product-Img-m"src="assets/images/week6/products4.jpg" alt="">
+                </a>
             </div>
             <div class="card-body p-0">
                 <h4 class="m-0">Poppy & Barley</h4>
@@ -186,12 +194,13 @@
             </div>
           
         </li>
-    </ul>
-     <!-- row-2 -->
-    <ul class="row list-unstyled">
-        <li class="col-6 col-md-3">
+        <!-- row-2 -->
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products5.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                  <img class="img-fluid product-Img-m"src="assets/images/week6/products5.jpg" alt="">
+                </a>
+              
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -210,9 +219,11 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/index4.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                     <img class="img-fluid product-Img-m"src="assets/images/week6/index4.jpg" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -231,9 +242,11 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products7.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                  <img class="img-fluid product-Img-m"src="assets/images/week6/products7.jpg" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -252,9 +265,11 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products8.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                    <img class="img-fluid product-Img-m "src="assets/images/week6/products8.jpg" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -273,12 +288,12 @@
                 </div>
             </div>
         </li>
-    </ul>
-     <!-- row-3 -->
-    <ul class="row list-unstyled">
-        <li class="col-6 col-md-3">
+        <!-- row-3 -->
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/index3.png" alt="">
+                <a href="#" class="hover-Scale">
+                   <img class="img-fluid product-Img-m"src="assets/images/week6/index3.png" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -297,9 +312,11 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products10.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                   <img class="img-fluid product-Img-m"src="assets/images/week6/products10.jpg" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -318,9 +335,11 @@
                 </div>
             </div>
         </li>
-        <li class="col-6 col-md-3">
+        <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products11.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                  <img class="img-fluid product-Img-m"src="assets/images/week6/products11.jpg" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -339,9 +358,11 @@
                 </div>
             </div>
         </li>
-         <li class="col-6 col-md-3">
+         <li class="col-6 col-md-3 mb-lg">
             <div class="card border-0">
-                <img class="img-fluid product-Img-m"src="assets/images/week6/products12.jpg" alt="">
+                <a href="#" class="hover-Scale">
+                    <img class="img-fluid product-Img-m"src="assets/images/week6/products12.jpg" alt="">
+                </a>
                 <div class="card-body p-0">
                     <h4 class="m-0">Poppy & Barley</h4>
                     <p class="m-0">Jo Malone</p>
@@ -385,55 +406,54 @@
       </div>
     </div>
 </div>
-
+  
   <!-- subscriptions-banner -->
-  <section class="subscriptions-banner">
-  <div class="container h-100 d-flex justify-content-center align-items-center">
-      <div class="row no-gutters w-100">
-          <div class="col-md-4"  data-aos="fade-up">
-              <h2 class="h2 text-secondary">
-                  記得 
-                  <br>
-                  訂閱以獲取更多資訊！
-              </h2>
-              <div class="input-group mb-3">
-                  <input type="text" class="form-control border-bold" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-dark-brown text-s" type="button" id="button-addon2">Subscribe</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+  <section class="subscriptions-Banner bg-Cover">
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row no-gutters w-100">
+            <div class="col-md-4"  data-aos="fade-up">
+                <label for="subscribe" class="h2 text-secondary">
+                    記得 
+                    <br>
+                    訂閱以獲取更多資訊！
+                </label>
+                <div class="input-group mb-3">
+                    <input type="text" id="subscribe" class="form-control border-Bold" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark-brown text-s" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </section>
   
-  <!-- footer -->
-  <section class="footer bg-dark-brown"> 
-      <div class="container py-2">
-        <div class="d-flex justify-content-between">
-            <!-- footer-logo -->
-            <div class="d-flex align-items-center">
-              <a href="index.html">
-                <h1 class="footer-Logo m-0 mr-m">
-                    D'Perfume
-                </h1>
-              </a>
-              <small class="text-white">© 2020. All Rights Reserved.</small>
-            </div>
-            <!-- navbar -->
-            <ul class="list-unstyled d-none d-md-flex m-0 align-items-center">
-              <li class="mr-l">
-                <a href="#"class="text-white">Product</a>
-              </li>
-              <li class="mr-l">
-                <a href="#"class="text-white">Blog</a>
-              </li>
-              <li class="mr-l">
-                <a href="#"class="text-white">Contact</a>
-              </li>
-            </ul>
-        </div>
+  
+   <!-- footer -->
+   <section class="footer bg-dark-brown"> 
+    <div class="container py-2">
+      <div class="d-flex justify-content-between">
+          <!-- footer-logo -->
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="mr-m">
+              <img class="img-fluid" src="assets/images/week6/d’Perfumewhite.png" alt="D'Pereume LOGO">
+            </a>
+            <small class="text-white">© 2020. All Rights Reserved.</small>
+          </div>
+          <!-- navbar -->
+          <ul class="list-unstyled d-none d-md-flex m-0 align-items-center">
+            <li class="mr-l">
+              <a href="product.html" class="text-white">Product</a>
+            </li>
+            <li class="mr-l">
+              <a href="#"class="text-white">Blog</a>
+            </li>
+            <li class="mr-l">
+              <a href="#"class="text-white">Contact</a>
+            </li>
+          </ul>
       </div>
+    </div>
   </section>
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
